@@ -22,6 +22,7 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          glow: "hsl(var(--primary-glow))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -47,6 +48,23 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Threat Level Colors
+        critical: {
+          DEFAULT: "hsl(var(--critical))",
+          foreground: "hsl(var(--critical-foreground))",
+        },
+        high: {
+          DEFAULT: "hsl(var(--high))",
+          foreground: "hsl(var(--high-foreground))",
+        },
+        medium: {
+          DEFAULT: "hsl(var(--medium))",
+          foreground: "hsl(var(--medium-foreground))",
+        },
+        low: {
+          DEFAULT: "hsl(var(--low))",
+          foreground: "hsl(var(--low-foreground))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -62,6 +80,20 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      backgroundImage: {
+        'gradient-cyber': 'var(--gradient-cyber)',
+        'gradient-threat': 'var(--gradient-threat)',
+        'gradient-glow': 'var(--gradient-glow)',
+      },
+      boxShadow: {
+        'cyber': 'var(--shadow-cyber)',
+        'threat': 'var(--shadow-threat)',
+        'card': 'var(--shadow-card)',
+      },
+      transitionTimingFunction: {
+        'smooth': 'var(--transition-smooth)',
+        'bounce': 'var(--transition-bounce)',
       },
       keyframes: {
         "accordion-down": {
@@ -84,6 +116,8 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "pulse-glow": "pulse-glow 2s ease-in-out infinite alternate",
+        "scan-line": "scan-line 3s linear infinite",
       },
     },
   },
